@@ -166,4 +166,7 @@ docker run -v /path/to/code:/app/code... // 실제로 호스트 머신의 폴더
 * deployment객체: deployment객체를 생성하고, 생성하고 관리해야 하는 pod의 수와 컨테이너 수에 대한 지침을 제공, 하나 이상의 pod를 제어 
 * service: pod를 그룹화하고, 공유주소, 공유 ip주소를 제공한다, 여러 pod를 해당 service로 이동하고 service에서 변경할 수 없는  ip주소에 연결할 수 있도록 한다. -> service가 없으면 내부적으로 pod에 접근하기 매우 어렵다, 왜냐하면 ip주소가 변경되고 클러스터 pod 외부에서 컨테이너화 되지 않은 앱에 전혀 연결할 수 없기 때문이다.
 * 선언적방식(deployment.yaml, service.yaml) 을 사용하는 접근방식이 권장된다. 명령을 어떻게 실행해야 하는지 동료에게 물어보지 않아도 되기 때문
+
+# 쿠버네티스로 데이터 & 볼륨 관리하기
+
 * 
